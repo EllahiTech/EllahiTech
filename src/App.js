@@ -10,7 +10,6 @@ import { WhatsAppChatButton } from './components/WhatsAppChatButton';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 import {Footer} from './components/Footer';
 import Navbar from './components/Navbar';
-import { LoadingProvider } from './contexts/LoadingContext';
 
 import './App.css';
 import "slick-carousel/slick/slick.css";
@@ -111,7 +110,7 @@ function App() {
   const video = ['./videos/hero.mp4'];
 
   return (
-    <LoadingProvider>
+    <>
 
       <SplashScreen />
 
@@ -171,7 +170,7 @@ function App() {
         <Footer />
       </footer>
     
-    </LoadingProvider>
+    </>
   );
 }
 

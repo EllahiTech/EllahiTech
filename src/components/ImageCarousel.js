@@ -1,24 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { PrevArrow, NextArrow } from './CustomArrows';
-import { useLoading } from '../contexts/LoadingContext';
 import './ImageCarousel.css';
 
 const ImageCarousel = ({ slides }) => {
-  const { setIsLoading } = useLoading();
-  const [loadedImages, setLoadedImages] = useState(0);
-  const totalImages = slides.length;
-
-  useEffect(() => {
-    if (loadedImages === totalImages) {
-      setIsLoading(false);
-    }
-  }, [loadedImages, totalImages, setIsLoading]);
-
-  const handleImageLoad = () => {
-    setLoadedImages(prev => prev + 1);
-  };
-
   const settings = {
     dots: true,
     infinite: true,
@@ -47,11 +32,14 @@ const ImageCarousel = ({ slides }) => {
     <Slider {...settings} beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}>
       {slides.map((slide, index) => (
         <div key={index} className="slide-container">
-          <img src={slide.image} alt={`Slide ${index}`} onLoad={handleImageLoad} />
+          <img src={slide.image} alt={`Slide ${index}`} />
         </div>
       ))}
     </Slider>
   );
 };
+
+
+
 
 export default ImageCarousel;
