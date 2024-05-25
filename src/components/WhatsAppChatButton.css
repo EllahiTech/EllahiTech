@@ -1,0 +1,37 @@
+.whatsapp-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #ece5dd;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    z-index: 999;
+
+    font-size: 40px;
+    box-shadow: 0 .2rem .5rem black;
+}
+
+/* 
+.whatsapp-chat-button img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 60px;
+    background-color: transparent;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+
+*/

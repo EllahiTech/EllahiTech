@@ -1,0 +1,33 @@
+.custom-arrow {
+    font-size: 3rem;
+    display: block;
+    color: var(--primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.custom-arrow.disabled {
+    display: none;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .prev-arrow {
+        left: 0px;
+    }
+
+    .next-arrow {
+        right: 0px;
+    }
+}

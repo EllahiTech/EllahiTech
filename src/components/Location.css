@@ -1,0 +1,15 @@
+.map-container {
+    margin: 2rem;
+    margin-top: 0;
+    padding: 5px 10px 10px 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--dark);
+}
+
+.map-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--light-text);
+}

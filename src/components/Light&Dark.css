@@ -1,0 +1,101 @@
+.toggle-button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display.dark {
+    background: #2C2C2F;
+}
+
+.toggle-button label {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background: #1F1F21;
+    box-shadow: 10px 10px 30px rgba(0, 155, 226, 0.5) inset;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s ease, box-shadow 0.4s ease;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: var(--dark);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+        -10px -10px 30px rgba(83, 83, 83, 0.5) inset;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-110%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s ease, box-shadow 0.4s ease;
+}
+
+.toggle-button svg {
+    position: absolute;
+    transition: margin-top 0.6s ease, opacity 0.6s ease;
+}
+
+.sun {
+    width: 1.5rem;
+    color: #FFD600;
+    margin-top: 150%;
+    opacity: 0;
+}
+
+.moon {
+    width: 1rem;
+    margin-top: 0%;
+    color: white;
+    opacity: 1;
+}
+
+.toggle-button input[type=checkbox]:checked+.display label {
+    background: #F3F3F3;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3) inset;
+}
+
+.toggle-button input[type=checkbox]:checked+.display label .circle {
+    left: 0%;
+    transform: translate(10%, -50%);
+    background: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+        -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+}
+
+.toggle-button input[type=checkbox]:checked+.display label .circle .sun {
+    margin-top: 0%;
+    opacity: 1;
+}
+
+.toggle-button input[type=checkbox]:checked+.display label .circle .moon {
+    margin-top: -150%;
+    opacity: 0;
+}
+
+.toggle-button label:hover .circle {
+    width: 45px;
+}
+
+@media (max-width: 750px) {
+    .toggle-button label:hover .circle {
+        width: 2rem;
+    }
+}

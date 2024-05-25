@@ -1,0 +1,120 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--dark);
+    color: var(--secondary);
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.homepage {
+    text-decoration: none;
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+
+.navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    transition: max-height .5s ease;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+.navbar-links a {
+    font-size: 20px;
+    margin-left: 20px;
+    color: var(--light-text);
+    text-decoration: none;
+    padding: .2rem .2rem .2rem .2rem;
+    cursor: pointer;
+    border-radius: 4rem;
+    transition: all 0.3s ease-out;
+    border: 2px solid transparent;
+}
+
+.navbar-links a:hover {
+    /* padding: 0 .4rem .3rem .6rem; */
+    padding: .3rem .6rem .3rem .6rem;
+    border-radius: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 3px solid var(--light-text);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.theme-toggle {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        right: 0;
+        width: 100%;
+        background-color: var(--dark);
+        padding: 1rem 0;
+        z-index: 9999;
+        align-items: start;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease;
+    }
+
+    .navbar-links.mobile-menu-open {
+        max-height: 1000px;
+    }
+
+    .navbar-links a {
+        font-size: 28px;
+        margin: 2rem;
+        transition: 0s;
+        border: 0px;
+    }
+
+    .navbar-links a:hover {
+        font-size: 28px;
+        border: 0px;
+        padding: 0 .4rem .3rem .2rem;
+        font-weight: normal;
+        letter-spacing: normal;
+        cursor: pointer;
+    }
+}

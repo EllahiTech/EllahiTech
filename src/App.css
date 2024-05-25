@@ -1,0 +1,101 @@
+:root {
+  --primary: #BCCBE8;
+  --secondary: #0c1527;
+  --text: #ffffff;
+  --light-text: #f0f0f0;
+  --light: #1d2b46;
+  --dark: #111b31;
+}
+
+.light-mode {
+  --primary: #5474af;
+  --secondary: #BCCBE8;
+  --text: #000818;
+  --light-text: #f0f0f0;
+  --light: #f0f0f0;
+  --dark: #2C3038;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light) var(--dark);
+}
+
+* {
+  font-family: "Teachers", sans-serif;
+}
+
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light);
+
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 0%;
+  color: var(--text);
+}
+
+.image-carousel {
+  padding: 0 0 2rem 0;
+}
+
+.service-carousel {
+  padding: 0 1rem 2rem 1rem;
+}
+
+
+.separate {
+  width: 10%;
+  height: 4px;
+  background-color: var(--primary);
+  margin: 0 auto;
+  border-radius: 2rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  opacity: .2;
+}
+
+.mobile-image-carousel {
+  margin-bottom: 4rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .image-carousel {
+    display: none;
+  }
+
+  .mobile-image-carousel {
+    display: block;
+  }
+}
