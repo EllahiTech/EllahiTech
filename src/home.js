@@ -7,7 +7,7 @@ import Location from './components/Location';
 import ServiceCarousel from './components/ServiceCarousel';
 import SplashScreen from './components/SplashScreen';
 
-import '../App.css';
+import './App.css';
 
 export const Home = () => {
   const whyus = [
