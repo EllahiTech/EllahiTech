@@ -10,6 +10,7 @@ import { WhatsAppChatButton } from './components/WhatsAppChatButton';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 import {Footer} from './components/Footer';
 import Navbar from './components/Navbar';
+import { LoadingProvider } from './contexts/LoadingContext';
 
 import './App.css';
 import "slick-carousel/slick/slick.css";
@@ -47,16 +48,16 @@ function App() {
 
   const slides = [
     {
-      image: '/carousal/c1.png',
+      image: '/carousal/pc1.png',
     },
     {
-      image: '/carousal/c2.png',
+      image: '/carousal/pc2.png',
     },
     {
-      image: '/carousal/c3.png',
+      image: '/carousal/pc3.png',
     },
     {
-      image: '/carousal/c4.png',
+      image: '/carousal/pc4.png',
     },
   ];
   const mobile_slides = [
@@ -110,7 +111,7 @@ function App() {
   const video = ['./videos/hero.mp4'];
 
   return (
-    <>
+    <LoadingProvider>
 
       <SplashScreen />
 
@@ -170,7 +171,7 @@ function App() {
         <Footer />
       </footer>
     
-    </>
+    </LoadingProvider>
   );
 }
 
