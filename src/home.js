@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HeroSection from '../components/HeroSection';
-import WhyUs from '../components/WhyUs';
-import ImageCarousel from '../components/ImageCarousel';
-import Location from '../components/Location';
-import ServiceCarousel from '../components/ServiceCarousel';
-import SplashScreen from '../components/SplashScreen';
+import HeroSection from './components/HeroSection';
+import WhyUs from './components/WhyUs';
+import ImageCarousel from './components/ImageCarousel';
+import Location from './components/Location';
+import ServiceCarousel from './components/ServiceCarousel';
+import SplashScreen from './components/SplashScreen';
 
 import '../App.css';
 
