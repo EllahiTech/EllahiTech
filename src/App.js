@@ -47,60 +47,60 @@ function App() {
 
   const slides = [
     {
-      image: './carousal/1.png',
+      image: '/carousal/c1.png',
     },
     {
-        image: './carousal/2.png',
+      image: '/carousal/c2.png',
     },
     {
-      image: './carousal/3.png',
+      image: '/carousal/c3.png',
     },
     {
-      image: './carousal/4.png',
+      image: '/carousal/c4.png',
     },
   ];
   const mobile_slides = [
     {
-      image: './carousal/Mobile1.png',
+      image: './carousal/mobile1.png',
     },
     {
-        image: './carousal/Mobile2.png',
+      image: './carousal/mobile2.png',
     },
     {
-      image: './carousal/Mobile3.png',
+      image: './carousal/mobile3.png',
     },
     {
-      image: './carousal/Mobile4.png',
+      image: './carousal/mobile4.png',
     },
   ];
 
   const services = [
     {
-      imageUrl: "./images/PIC 1.png",
+      imageUrl: "./images/pic_1.png",
       name: "All In One\nRepair Solutions",
       description: "Is your motherboard, keyboard, trackpad having issues? We are here to bring them back to their original state with all kinds of repairs and replacements.",
       buttonLabel: "Contact Us",
     },
     {
-      imageUrl: "./images/PIC 2.png",
+      imageUrl: "./images/pic_2.png",
       name: "Screen\nReplacement",
       description: "Broken Screen or Spots in your screen? Need not worry as we offer all kinds of screen replacements and repairs.",
       buttonLabel: "Contact Us",
     },
     {
-      imageUrl: "./images/PIC 3.jpg",
+      imageUrl: "./images/pic_3.png",
       name: "Battery\nReplacement",
       description: "Battery life too short or not working? Nothing to stress as we offer battery replacements of all the laptop models.",
       buttonLabel: "Contact Us",
     },
     {
-      imageUrl: "./images/PIC 4.png",
+      imageUrl: "./images/pic_4.png",
       name: "Storage\nUpgrade",
       description: "Out of storage or device running super slow? We got you covered with all kinds of HDD & SSD storage upgrades for your laptops & desktops.",
       buttonLabel: "Contact Us",
     },
     {
-      imageUrl: "./images/PIC 3.jpg",
+      imageUrl: "./images/pic_3.jpg",
       name: "Ram Upgrade\n& Replacement",
       description: "Tired of your device running slow? We provide ram upgrades for all kinds of desktops and laptops.",
       buttonLabel: "Contact Us",
