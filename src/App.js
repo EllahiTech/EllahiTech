@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import {Home} from './pages/home';
+import {Home} from './home';
 
 import { WhatsAppChatButton } from './components/WhatsAppChatButton';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
