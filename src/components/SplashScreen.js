@@ -17,7 +17,7 @@ const SplashScreen = () => {
   return (
     <div className={`splash-screen ${isVisible ? '' : 'hide'}`}>
       <div className={`scrolling-content ${isAnimationStarted ? 'animation-started' : ''}`}>
-        <img src={'/logo.png'} alt="Logo" className="splash-logo" />
+        <img src={'./logo.png'} alt="Logo" className="splash-logo" />
         <h1>Welcome to EllahiTech</h1>
       </div>
     </div>
