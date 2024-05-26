@@ -9,7 +9,7 @@ const SplashScreen = () => {
     const timer = setTimeout(() => {
       setIsVisible(false);
       setIsAnimationStarted(true);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);

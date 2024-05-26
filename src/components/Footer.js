@@ -189,7 +189,7 @@ export const Footer = () => {
         </div>
         
         <div className='logo-container'>
-          <img src='./logo.png' />
+          <img src='./images/logo.png' />
         </div>
 
         <div class="separator-container">

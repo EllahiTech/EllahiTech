@@ -134,7 +134,7 @@
     color: var(--light-text);
 }
 
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
     .text-area {
         width: 70%;
     }
@@ -229,19 +229,19 @@
     .terms {
         font-size: 14px;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .hero-container {
         position: relative;
         overflow: hidden;
         height: 100vh;
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
 
     .content {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -266,16 +266,16 @@
     }
 
     .hero-texts h5 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-texts h1 {
-        font-size: 5.5rem;
+        font-size: 4.8rem;
     }
 
     .hero-texts p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 0;
     }
 
@@ -305,7 +305,7 @@
     .hero-call,
     .hero-map,
     .hero-mail {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-whatsapp p,
@@ -347,17 +347,17 @@
     }
 
     .hero-texts h5 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .hero-texts h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     .hero-texts p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .contact-icons {
@@ -394,6 +394,6 @@
     .hero-call p,
     .hero-map p,
     .hero-mail p {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 }
