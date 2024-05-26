@@ -47,16 +47,16 @@ function App() {
 
   const slides = [
     {
-      image: '/carousal/pc1.png',
+      image: './carousal/pc1.png',
     },
     {
-      image: '/carousal/pc2.png',
+      image: './carousal/pc2.png',
     },
     {
-      image: '/carousal/pc3.png',
+      image: './carousal/pc3.png',
     },
     {
-      image: '/carousal/pc4.png',
+      image: './carousal/pc4.png',
     },
   ];
   const mobile_slides = [
