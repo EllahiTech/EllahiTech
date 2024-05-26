@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = (e, id) => {
     e.preventDefault();
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const additionalSpace = 30;
+    const additionalSpace = 20;
     const target = document.getElementById(id);
     if (target) {
       window.scrollTo({
